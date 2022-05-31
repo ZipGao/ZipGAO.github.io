@@ -17,4 +17,6 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll -->
 
-Artificial intelligence graduate student of USTC, study on GNN, Representation learning, Epidemic prediction.
+<!-- Artificial intelligence graduate student of USTC, study on GNN, Representation learning, Epidemic prediction. -->
+
+
