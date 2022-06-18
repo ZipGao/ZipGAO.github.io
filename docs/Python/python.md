@@ -2,7 +2,7 @@
 layout: default
 title: Python
 has_children: true
-# permalink: /docs/python
+permalink: /docs/python
 ---
 
 ## Python
