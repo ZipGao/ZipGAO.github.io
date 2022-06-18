@@ -1,3 +1,10 @@
+---
+layout: post
+title: Pandas 从Python dict中加载数据
+date: 2020-05-31
+categorires: pandas
+---
+
 # Pandas 从Python dict中加载数据
 1. 使用 pandas.Dataframe 类的默认构造函数从 Dictionary 创建 DataFrame
 	```
@@ -17,7 +24,6 @@
 	df
 	```
 	Output:
-	![out]({{site.url}}/img/Pasted image 20220527154709.png)
 	![[../../img/Pasted image 20220527154709.png]]
 
 2. 使用用户定义的索引从 Dictionary 创建 DataFrame。
@@ -39,7 +45,8 @@
 	df	
 	```
 	Output:
-	![[../../img/Pasted image 20220527154850.png]]
+	![out](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted%20image%2020220527154850.png)
+
 1. 从简单字典创建 DataFrame，即具有键和简单值（如整数或字符串值）的字典。
 	```
 	# import pandas library
@@ -61,6 +68,7 @@
 	```
 	Output:
 	![[../../img/Pasted image 20220527155122.png]]
+
 4. 从 Dictionary 创建 DataFrame 仅包含所需的列。
 	```
 	# import pandas library
@@ -82,6 +90,7 @@
 	```
 	Output:
 	![[../../img/Pasted image 20220527155210.png]]
+
 5. 从具有不同方向的字典创建数据帧，即字典键充当数据帧中的索引。
 	```
 	# import pandas library
@@ -104,7 +113,6 @@
 	```
 	Output:
 	![[../../img/Pasted image 20220527155257.png]]
-
 6. 从嵌套字典创建 DataFrame。
 	```
 	# import pandas library
@@ -143,7 +151,8 @@
 	df
 	
 	```
-	Output:![[../../img/Pasted image 20220527155349.png]]
+	Output:
+	![[../../img/Pasted image 20220527155349.png]]
 
 ------------
 参考文献：[How to create DataFrame from dictionary in Python-Pandas?](https://www.geeksforgeeks.org/how-to-create-dataframe-from-dictionary-in-python-pandas/)
