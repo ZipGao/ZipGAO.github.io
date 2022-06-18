@@ -1,6 +1,8 @@
-_site
-.sass-cache
+*.gem
+.bundle
+.ruby-version
 .jekyll-cache
-.jekyll-metadata
-vendor
-_posts/.obsidian
+.sass-cache
+_site
+Gemfile.lock
+node_modules
