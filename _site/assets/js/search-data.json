@@ -1,0 +1,572 @@
+{"0": {
+    "doc": "Pandas 从Python dict中加载数据",
+    "title": "Pandas 从Python dict中加载数据",
+    "content": ". | 使用 pandas.Dataframe 类的默认构造函数从 Dictionary 创建 DataFrame # import pandas library import pandas as pd # dictionary with list object in values details = { 'Name' : ['Ankit', 'Aishwarya', 'Shaurya', 'Shivangi'], 'Age' : [23, 21, 22, 21], 'University' : ['BHU', 'JNU', 'DU', 'BHU'], } # creating a Dataframe object df = pd.DataFrame(details) df . Output: . | 使用用户定义的索引从 Dictionary 创建 DataFrame。 # import pandas library import pandas as pd # dictionary with list object in values details = { 'Name' : ['Ankit', 'Aishwarya', 'Shaurya', 'Shivangi'], 'Age' : [23, 21, 22, 21], 'University' : ['BHU', 'JNU', 'DU', 'BHU'], } # creating a Dataframe object from dictionary # with custom indexing df = pd.DataFrame(details, index = ['a', 'b', 'c', 'd']) df . Output: . | 从简单字典创建 DataFrame，即具有键和简单值（如整数或字符串值）的字典。 # import pandas library import pandas as pd # dictionary details = { 'Ankit' : 22, 'Golu' : 21, 'hacker' : 23 } # creating a Dataframe object from a list # of tuples of key, value pair df = pd.DataFrame(list(details.items())) df . Output: . | 从 Dictionary 创建 DataFrame 仅包含所需的列。 # import pandas library import pandas as pd # dictionary with list object in values details = { 'Name' : ['Ankit', 'Aishwarya', 'Shaurya', 'Shivangi'], 'Age' : [23, 21, 22, 21], 'University' : ['BHU', 'JNU', 'DU', 'BHU'], } # creating a Dataframe object with skipping # one column i.e skipping age column. df = pd.DataFrame(details, columns = ['Name', 'University']) df . Output: . | 从具有不同方向的字典创建数据帧，即字典键充当数据帧中的索引。 # import pandas library import pandas as pd # dictionary with list object in values details = { 'Name' : ['Ankit', 'Aishwarya', 'Shaurya', 'Shivangi'], 'Age' : [23, 21, 22, 21], 'University' : ['BHU', 'JNU', 'DU', 'BHU'], } # creating a Dataframe object in which dictionary # key is act as index value and column value is # 0, 1, 2... df = pd.DataFrame.from_dict(details, orient = 'index') df . Output: . | 从嵌套字典创建 DataFrame。 # import pandas library import pandas as pd # dictionary with dictionary object # in values i.e. nested dictionary details = { 0 : { 'Name' : 'Ankit', 'Age' : 22, 'University' : 'BHU' }, 1 : { 'Name' : 'Aishwarya', 'Age' : 21, 'University' : 'JNU' }, 2 : { 'Name' : 'Shaurya', 'Age' : 23, 'University' : 'DU' } } # creating a Dataframe object # from nested dictionary # in which inside dictionary # key is act as index value # and column value is 0, 1, 2... df = pd.DataFrame(details) # swap the columns with indexes df = df.transpose() df . Output: . | . 参考文献：How to create DataFrame from dictionary in Python-Pandas? . ",
+    "url": "http://localhost:4000/docs/Python/pandas/2022-05-31-Pandas%E4%BB%8EPython%20dict%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E6%B3%95/",
+    "relUrl": "/docs/Python/pandas/2022-05-31-Pandas%E4%BB%8EPython%20dict%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E6%B3%95/"
+  },"1": {
+    "doc": "SSH 工具介绍及常见使用方法",
+    "title": "SSH 工具介绍及常见使用方法",
+    "content": " ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"
+  },"2": {
+    "doc": "SSH 工具介绍及常见使用方法",
+    "title": "SSH介绍",
+    "content": "SSH 为 Secure Shell 的缩写。 SSH是一种网络协议，用于计算机之间的加密登录。如果一个用户从本地计算机，使用SSH协议登录另一台远程计算机，我们就可以认为，这种登录是安全的，即使被中途截获，密码也不会泄露。 SSH主要用于远程登录。假定你要以用户名user，登录远程主机host，只要一条简单命令就可以了。 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#ssh%E4%BB%8B%E7%BB%8D",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#ssh介绍"
+  },"3": {
+    "doc": "SSH 工具介绍及常见使用方法",
+    "title": "常见使用方法",
+    "content": " ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#常见使用方法"
+  },"4": {
+    "doc": "SSH 工具介绍及常见使用方法",
+    "title": "进行远程登录",
+    "content": ". | ssh user@host：最简单的远程登录方法，默认对目标主机22端口建立连接 | ssh user@host -p portnumber：指定目标主机的连接端口 第一次登录会产生如下系统提示： $ ssh user@host The authenticity of host ‘host (12.18.429.21)’ can’t be established. RSA key fingerprint is 98:2e:d7:e0:de:9f:ac:67:28:c2:42:2d:37:16:58:4d. Are you sure you want to continue connecting (yes/no)? . 输入yes并且输入登录密码之后，本地便将目标主机的公钥保存在user/.ssh/known_host文件之中，下次登录就可以省去此步警告，直接输入密码登录 . | 公钥登录方法 参考: [[2022-06-18-SSH 配置公钥登录]] . 使用密码登录，每次都必须输入密码，非常麻烦。好在SSH还提供了公钥登录，可以省去输入密码的步骤。 所谓”公钥登录”，原理很简单，就是用户将自己的公钥储存在远程主机上。登录的时候，远程主机会向用户发送一段随机字符串，用户用自己的私钥加密后，再发回来。远程主机用事先储存的公钥进行解密，如果成功，就证明用户是可信的，直接允许登录shell，不再要求密码。 这种方法要求用户必须提供自己的公钥。如果没有现成的，可以直接用ssh-keygen生成一个： . ssh-keygen . 运行上面的命令以后，系统会出现一系列提示，可以一路回车。其中有一个问题是，要不要对私钥设置口令（passphrase），如果担心私钥的安全，这里可以设置一个。 . 运行结束以后，在$HOME/.ssh/目录下，会新生成两个文件：id_rsa.pub和id_rsa。前者是公钥，后者是私钥。 . 这时再输入下面的命令，将公钥传送到远程主机host上面： . $ ssh-copy-id user@host . 上述命令只是传输公钥的一种方法，当然也可以使用其他的方法进行文件传输，如SCP以及命令行工具（Xshell，MOBAXtreme等）自带的工具进行秘钥的传输。从此再登录，就不需要输入密码了。 如果还是不行，就打开远程主机的/etc/ssh/sshd_config这个文件，检查下面几行前面”#”注释是否取掉。 . RSAAuthentication yes PubkeyAuthentication yes AuthorizedKeysFile .ssh/authorized_keys . 然后，重启远程主机的ssh服务。 . // ubuntu系统 service ssh restart // debian系统 /etc/init.d/ssh restart . | . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#%E8%BF%9B%E8%A1%8C%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#进行远程登录"
+  },"5": {
+    "doc": "SSH 工具介绍及常见使用方法",
+    "title": "远程操作与端口转发",
+    "content": ". | 简单的命令的执行： 通常对远程主机的操作可以直接通过SSH远程登录进行操作，有时命令较少时可以直接使用SSH命令在远程主机上执行命令，如ssh -user@host -p port 'ls' 表示在远程主机上执行ls命令。 | 本地端口转发 假定host1是本地主机，host2是远程主机。由于种种原因，这两台主机之间无法连通（防火墙等等）。但是，另外还有一台host3，可以同时连通前面两台主机。因此，很自然的想法就是，通过host3，将host1连上host2。在host1上执行下面命令即可： . ssh -L 1111:host2:2222 host3 命令中的L参数一共接受三个值，分别是”本地端口:目标主机:目标主机端口”，它们之间用冒号分隔。这条命令的意思，就是指定SSH绑定本地端口1111，然后指定host3将所有的数据，转发到目标主机host2的2222端口。 这样一来，我们只要连接host1的2121端口，就等于连上了host2的21端口。 “本地端口转发”使得host1和host3之间仿佛形成一个数据传输的秘密隧道，因此又被称为”SSH隧道”。 下面是一个比较有趣的例子。 ssh -L 5900:localhost:5900 host3 . 它表示将本机的5900端口绑定host3的5900端口（这里的localhost指的是host3，因为目标主机是相对host3而言的，也就是在host3上的localhost）。 另一个例子是通过host3的端口转发，ssh登录host2。 . ssh -L 9001:host2:22 host3 . 这时，只要ssh登录本机的9001端口，就相当于登录host2了。 . ssh -p 9001 localhost . 上面的-p参数表示指定登录端口。 通过跳板机host2的port2端口在本地host1的port1端口运行远端服务器host3的port3端口上的jupyter notebook服务： . ssh -N -L port1:localhost:port3 user@host2 -p port2 . 从上面的命令中可以看出，-L之后的命令可以理解是在host3上执行的。 . | 远程端口转发 既然”本地端口转发”是指绑定本地端口的转发，那么”远程端口转发”（remote forwarding）当然是指绑定远程端口的转发。 . 还是接着看上面那个例子，host1与host2之间无法连通，必须借助host3转发。但是，特殊情况出现了，host3是一台内网机器，它可以连接外网的host1，但是反过来就不行，外网的host1连不上内网的host3。这时，”本地端口转发”就不能用了，怎么办？ . 解决办法是，既然host3可以连host1，那么就从host3上建立与host1的SSH连接，然后在host1上使用这条连接就可以了。 . 我们在host3执行下面的命令： . ssh -R 2121:host2:21 host1 . R参数也是接受三个值，分别是”远程主机端口:目标主机:目标主机端口”。这条命令的意思，就是让host1监听它自己的2121端口，然后将所有数据经由host3，转发到host2的21端口。由于对于host3来说，host1是远程主机，所以这种情况就被称为”远程端口绑定”。 绑定之后，我们在host1就可以连接host2了： . $ ftp localhost:2121 . 这里必须指出，”远程端口转发”的前提条件是，host1和host3两台主机都有sshD和ssh客户端。 . | . 参考资料： ## SSH原理与使用教程 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9C%E4%B8%8E%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/#远程操作与端口转发"
+  },"6": {
+    "doc": "SSH 配置公钥登录",
+    "title": "SSH 配置公钥登录",
+    "content": "配置公钥可以实现本机免密登录 . 请在常用个人机器上如下配置 . mac用户： . | 在本地机器上，打开终端terminal； . | 输入ssh-copy-id -p 1500 $USER@222.195.93.60，按提示输入服务器密码 . | 直接ssh -p 1500 $USER@222.195.93.60 （部分ssh版本是 ssh $USER@222.195.93.60 1500）免密登录 . | . windows用户： . | 在本地机器上，打开cmd，输入ssh-keygen，生成~/.ssh/id_rsa与~/.ssh/id_rsa.pub两个文件 . | 将生成的id_rsa.pub上传至服务器：scp -p 1500 ~/.ssh/id_rsa.pub $USER@222.195.93.60:/data/$USER . | 在服务器上，cat ~/id_rsa.pub » ~/.ssh/authorized_keys 即可测试免密登录 . | . 公钥传输也可以用带有scp功能的终端（例如mobaxterm左侧scp栏）直接传输上去 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-SSH%20%E9%85%8D%E7%BD%AE%E5%85%AC%E9%92%A5%E7%99%BB%E5%BD%95/",
+    "relUrl": "/docs/tools/2022-06-18-SSH%20%E9%85%8D%E7%BD%AE%E5%85%AC%E9%92%A5%E7%99%BB%E5%BD%95/"
+  },"7": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "社交组服务器双重认证设置",
+    "content": "近期网络安全事故频发，且多数为弱密码、弱口令导致账户被密码被暴力破解，为了防止此类现象发生，服务器采取公钥 或 密码 + Google-Authenticator 的双重认证登录措施。需要按照以下步骤进行操作。 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/"
+  },"8": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "Step1 修改默认登录密码",
+    "content": "使用 yppasswd 命令修改默认登录密码（请严格使用强密码！！！包含数字，大小写，特殊符号，长度10位以上）即可，如已经修改，可跳过 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step1-%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step1-修改默认登录密码"
+  },"9": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "Step2 [[2022-06-18-SSH 配置公钥登录]]",
+    "content": " ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step2-2022-06-18-ssh-%E9%85%8D%E7%BD%AE%E5%85%AC%E9%92%A5%E7%99%BB%E5%BD%95",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step2-2022-06-18-ssh-配置公钥登录"
+  },"10": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "Step3 下载谷歌认证器",
+    "content": "iOS 系统可以在 App Store 搜索 Google Authenticator 并下载 . Andorid 系统可以在 Google Play 搜索 Google 身份验证器 并下载。如不方便，可以在下面的链接中，下载APK文件并安装 . 链接：https://rec.ustc.edu.cn/share/f386dfe0-d794-11ec-8ddc-6b8674520b81密码：gofx . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step3-%E4%B8%8B%E8%BD%BD%E8%B0%B7%E6%AD%8C%E8%AE%A4%E8%AF%81%E5%99%A8",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step3-下载谷歌认证器"
+  },"11": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "Step4 开始绑定认证器",
+    "content": "登录后，输入 google-authenticator，启动认证，输入 y . 随后，会弹出一个二维码，如下图所示，以及对应二维码的 key，验证码，和紧急代码 . 打开下载好的 Google身份验证器，点击左下角的加号，点击扫描二维码 . 扫码后，手机上则会显示绑定的动态验证码，验证码每30s刷新一次 . 此外，命令行中还会出现四个y/n的问题，依次输入 y y n y （请注意确认问题是对应的，前面有可能会有额外的其他选项）以确保动态验证码的安全性 . 至此，完成绑定工作。 . （若后续出现验证无法登录，可以通过私钥登录之后尝试重新进行这一步，并且扫描最新的二维码进行绑定） . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step4-%E5%BC%80%E5%A7%8B%E7%BB%91%E5%AE%9A%E8%AE%A4%E8%AF%81%E5%99%A8",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step4-开始绑定认证器"
+  },"12": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "Step5 登录",
+    "content": "在随后的登录中，除了输入密码外，还需要输入手机上的动态验证码，因此即使密码或公钥被爆破，动态验证码的存在依然能保证账号的安全性 . 此外需要注意，每30s只有3次输入错误（密码和验证码均包括）的机会，反复输入错误，需要等待1分钟后再尝试登录。 . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step5-%E7%99%BB%E5%BD%95",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#step5-登录"
+  },"13": {
+    "doc": "社交组服务器双重认证设置",
+    "title": "QA",
+    "content": ". | Q：可以不开启双重认证吗？ | . A：强烈建议开启双重认证以防范攻击者的暴力破解，随着网络安全形式的变化，可能随时要求强制使用双重认证登录，届时没有开启双重认证的用户，将无法登录服务器。 . | Q：开启双重认证后换了手机怎么办？ | . A：Google 身份认证器支持导出账号，可以点击主界面右上角的三个点，选择导出账号，即可将已经绑定的双重认证导出到新手机。 . | Q：开启双重认证后是否影响公钥登录？ | . A：不影响，但需要服务器开启公钥登录。且公钥登录不需要输入验证码。 . | Q：开启双重认证是否影响 vs code 远程开发？ | . A：不影响，和普通登录相同，登录认证时除了输入密码还需要输入验证码。登录后，开发操作不受任何影响。 . | Q：在外实习的同学重置系统后无账号，无法登陆服务器，怎么办？ | . A：请返校后联系服务器管理员（谢哲勇，彭文俊）。届时再开设账号、更改目录权限和开启双重认证。 . | Q: 是否需要在两台机器上绑定？ | . A: wtf/jojo上任意一台绑定即可 . 如有其他疑问，欢迎大家在社交组微信群中提出，我们会补充到QA部分。 . | Q：如何判断自己的密码强度 | . A：可以参考网站 https://mimaqiangdu.bmcx.com/ 进行检测 . | Q: 曾经进行过公钥现无法登录的（包括vscode） | . A: 若以前尝试过公钥登录vscode，那么请查看你对应的.ssh文件夹下的known_hosts文件，删除对应的登录记录（就是对应的fingerprint）（wtf是端口1500，jojo是1501）（相关问题的查询关键词：fingerprint， knownhost） . （图1为错误样例，图2、3为处理方案） . ",
+    "url": "http://localhost:4000/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#qa",
+    "relUrl": "/docs/tools/2022-06-18-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%8C%E9%87%8D%E8%AE%A4%E8%AF%81%E4%BB%A5%E5%8F%8A%E5%85%AC%E9%92%A5%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95/#qa"
+  },"14": {
+    "doc": "Python Google style comment",
+    "title": "Python Google style comment",
+    "content": "Created: June 17, 2022 Tags: #python, #规范 . 作用：确保对模块, 函数, 方法和行内注释使用正确的风格 . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/"
+  },"15": {
+    "doc": "Python Google style comment",
+    "title": "文档字符串",
+    "content": "Python有一种独一无二的的注释方式: 使用文档字符串. 文档字符串是包, 模块, 类或函数里的第一个语句. 这些字符串可以通过对象的 __doc__ 成员被自动提取, 并且被 pydoc 所用. (你可以在你的模块上运行pydoc试一把, 看看它长什么样). 我们对文档字符串的惯例是使用三重双引号 ”””( PEP-257 ). 一个文档字符串应该这样组织: 首先是一行以句号, 问号或惊叹号结尾的概述(或者该文档字符串单纯只有一行). 接着是一个空行. 接着是文档字符串剩下的部分, 它应该与文档字符串的第一行的第一个引号对齐. 下面有更多文档字符串的格式化规范. ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#%E6%96%87%E6%A1%A3%E5%AD%97%E7%AC%A6%E4%B8%B2",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#文档字符串"
+  },"16": {
+    "doc": "Python Google style comment",
+    "title": "模块",
+    "content": "每个文件应该包含一个许可样板. 根据项目使用的许可(例如, Apache 2.0, BSD, LGPL, GPL), 选择合适的样板. 其开头应是对模块内容和用法的描述. A one-line summary of the module or program, terminated by a period. Leave one blank line. The rest of this docstring should contain an overall description of the module or program. Optionally, it may also contain a brief description of exported classes and functions and/or use examples. Typical usage example: foo = ClassFoo()bar = foo.FunctionBar() . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#%E6%A8%A1%E5%9D%97",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#模块"
+  },"17": {
+    "doc": "Python Google style comment",
+    "title": "函数和方法",
+    "content": "下文所指的函数,包括函数, 方法, 以及生成器. 一个函数必须要有文档字符串, 除非它满足以下条件: . | 外部不可见 | 非常短小 | 简单明了 | . 文档字符串应该包含函数做什么, 以及输入和输出的详细描述. 通常, 不应该描述”怎么做”, 除非是一些复杂的算法. 文档字符串应该提供足够的信息, 当别人编写代码调用该函数时, 他不需要看一行代码, 只要看文档字符串就可以了. 对于复杂的代码, 在代码旁边加注释会比使用文档字符串更有意义. 覆盖基类的子类方法应有一个类似 See base class 的简单注释来指引读者到基类方法的文档注释.若重载的子类方法和基类方法有很大不同,那么注释中应该指明这些信息. 关于函数的几个方面应该在特定的小节中进行描述记录， 这几个方面如下文所述. 每节应该以一个标题行开始. 标题行以冒号结尾. 除标题行外, 节的其他内容应被缩进2个空格. Args:列出每个参数的名字, 并在名字后使用一个冒号和一个空格, 分隔对该参数的描述.如果描述太长超过了单行80字符,使用2或者4个空格的悬挂缩进(与文件其他部分保持一致). 描述应该包括所需的类型和含义. 如果一个函数接受*foo(可变长度参数列表)或者bar (任意关键字参数), 应该详细列出*foo和bar.Returns: (或者 Yields: 用于生成器)描述返回值的类型和语义. 如果函数返回None, 这一部分可以省略.Raises:列出与接口有关的所有异常. **def** fetch_smalltable_rows(table_handle: smalltable.Table, keys: Sequence[Union[bytes, str]], require_all_keys: bool = **False**, ) -&gt; Mapping[bytes, Tuple[str]]: *\"\"\"Fetches rows from a Smalltable. Retrieves rows pertaining to the given keys from the Table instance represented by table_handle. String keys will be UTF-8 encoded. Args: table_handle: An open smalltable.Table instance. keys: A sequence of strings representing the key of each table row to fetch. String keys will be UTF-8 encoded. require_all_keys: Optional; If require_all_keys is True only rows with values set for all keys will be returned. Returns: A dict mapping keys to the corresponding table row data fetched. Each row is represented as a tuple of strings. For example: {b'Serak': ('Rigel VII', 'Preparer'), b'Zim': ('Irk', 'Invader'), b'Lrrr': ('Omicron Persei 8', 'Emperor')} Returned keys are always bytes. If a key from the keys argument is missing from the dictionary, then that row was not found in the table (and require_all_keys must have been False). Raises: IOError: An error occurred accessing the smalltable. \"\"\"* . 在 Args: 上进行换行也是可以的: . **def** fetch_smalltable_rows(table_handle: smalltable.Table, keys: Sequence[Union[bytes, str]], require_all_keys: bool = **False**, ) -&gt; Mapping[bytes, Tuple[str]]: *\"\"\"Fetches rows from a Smalltable. Retrieves rows pertaining to the given keys from the Table instance represented by table_handle. String keys will be UTF-8 encoded. Args: table_handle: An open small table.Table instance. keys: A sequence of strings representing the key of each table row to fetch. String keys will be UTF-8 encoded. require_all_keys: Optional; If require_all_keys is True only rows with values set for all keys will be returned. Returns: A dict mapping keys to the corresponding table row data fetched. Each row is represented as a tuple of strings. For example: {b'Serak': ('Rigel VII', 'Preparer'), b'Zim': ('Irk', 'Invader'), b'Lrrr': ('Omicron Persei 8', 'Emperor')} Returned keys are always bytes. If a key from the keys argument is missing from the dictionary, then that row was not found in the table (and require_all_keys must have been False). Raises: IOError: An error occurred accessing the smalltable. \"\"\"* . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%B9%E6%B3%95",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#函数和方法"
+  },"18": {
+    "doc": "Python Google style comment",
+    "title": "类",
+    "content": "类应该在其定义下有一个用于描述该类的文档字符串. 如果你的类有公共属性(Attributes), 那么文档中应该有一个属性(Attributes)段. 并且应该遵守和函数参数相同的格式. **class** **SampleClass**(object): *\"\"\"Summary of class here. Longer class information.... Longer class information.... Attributes: likes_spam: A boolean indicating if we like SPAM or not. eggs: An integer count of the eggs we have laid. \"\"\"* **def** __init__(self, likes_spam=**False**): *\"\"\"Inits SampleClass with blah.\"\"\"* self.likes_spam = likes_spam self.eggs = 0 **def** public_method(self): *\"\"\"Performs operation blah.\"\"\"* . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#%E7%B1%BB",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#类"
+  },"19": {
+    "doc": "Python Google style comment",
+    "title": "块注释和行注释",
+    "content": "最需要写注释的是代码中那些技巧性的部分. 如果你在下次 代码审查 的时候必须解释一下, 那么你应该现在就给它写注释. 对于复杂的操作, 应该在其操作开始前写上若干行注释. 对于不是一目了然的代码, 应在其行尾添加注释. *# We use a weighted dictionary search to find out where i is in # the array. We extrapolate position based on the largest num # in the array and the array size and then do binary search to # get the exact number.* **if** i &amp; (i-1) == 0: *# True if i is 0 or a power of 2.* . 为了提高可读性, 注释应该至少离开代码2个空格. 另一方面, 绝不要描述代码. 假设阅读代码的人比你更懂Python, 他只是不知道你的代码要做什么. *# BAD COMMENT: Now go through the b array and make sure whenever i occurs # the next element is i+1* . 转自： . Python风格规范 . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#%E5%9D%97%E6%B3%A8%E9%87%8A%E5%92%8C%E8%A1%8C%E6%B3%A8%E9%87%8A",
+    "relUrl": "/docs/Python/Python%20codebase/Python%20Google%20style%20comment/#块注释和行注释"
+  },"20": {
+    "doc": "PyTorch常用代码段",
+    "title": "[深度学习框架]PyTorch常用代码段 - 知乎",
+    "content": "Created: May 30, 2022 3:38 PM . 原文链接：[深度学习框架]PyTorch常用代码段-知乎 . PyTorch最好的资料是官方文档。 . 本文是PyTorch常用代码段，在参考资料张皓：PyTorch Cookbook的基础上做了一些修补，方便使用时查阅。 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6pytorch%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E6%AE%B5---%E7%9F%A5%E4%B9%8E",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#深度学习框架pytorch常用代码段---知乎"
+  },"21": {
+    "doc": "PyTorch常用代码段",
+    "title": "1. 基本配置",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#1-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#1-基本配置"
+  },"22": {
+    "doc": "PyTorch常用代码段",
+    "title": "导入包和版本查询",
+    "content": "import torch import torch.nn as nn import torchvision print(torch.__version__) print(torch.version.cuda) print(torch.backends.cudnn.version()) print(torch.cuda.get_device_name(0)) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%AF%BC%E5%85%A5%E5%8C%85%E5%92%8C%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#导入包和版本查询"
+  },"23": {
+    "doc": "PyTorch常用代码段",
+    "title": "可复现性",
+    "content": "在硬件设备（CPU、GPU）不同时，完全的可复现性无法保证，即使随机种子相同。但是，在同一个设备上，应该保证可复现性。具体做法是，在程序开始的时候固定torch的随机种子，同时也把numpy的随机种子固定。 . np.random.seed(0) torch.manual_seed(0) torch.cuda.manual_seed_all(0) torch.backends.cudnn.deterministic = True torch.backends.cudnn.benchmark = False . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%8F%AF%E5%A4%8D%E7%8E%B0%E6%80%A7",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#可复现性"
+  },"24": {
+    "doc": "PyTorch常用代码段",
+    "title": "显卡设置",
+    "content": "如果只需要一张显卡 . # Device configuration device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') . 如果需要指定多张显卡，比如0，1号显卡。 . import os os.environ['CUDA_VISIBLE_DEVICES'] = '0,1' . 也可以在命令行运行代码时设置显卡： . CUDA_VISIBLE_DEVICES=0,1 python train.py . 清除显存 . torch.cuda.empty_cache() . 也可以使用在命令行重置GPU的指令 . nvidia-smi --gpu-reset -i [gpu_id] . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%98%BE%E5%8D%A1%E8%AE%BE%E7%BD%AE",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#显卡设置"
+  },"25": {
+    "doc": "PyTorch常用代码段",
+    "title": "2. 张量(Tensor)处理",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#2-%E5%BC%A0%E9%87%8Ftensor%E5%A4%84%E7%90%86",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#2-张量tensor处理"
+  },"26": {
+    "doc": "PyTorch常用代码段",
+    "title": "张量的数据类型",
+    "content": "PyTorch有9种CPU张量类型和9种GPU张量类型。 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BC%A0%E9%87%8F%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#张量的数据类型"
+  },"27": {
+    "doc": "PyTorch常用代码段",
+    "title": "张量基本信息",
+    "content": "tensor = torch.randn(3,4,5) print(tensor.type())  # 数据类型 print(tensor.size())  # 张量的shape，是个元组 print(tensor.dim())   # 维度的数量 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BC%A0%E9%87%8F%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#张量基本信息"
+  },"28": {
+    "doc": "PyTorch常用代码段",
+    "title": "命名张量",
+    "content": "张量命名是一个非常有用的方法，这样可以方便地使用维度的名字来做索引或其他操作，大大提高了可读性、易用性，防止出错。 . # 在PyTorch 1.3之前，需要使用注释 # Tensor[N, C, H, W] images = torch.randn(32, 3, 56, 56) images.sum(dim=1) images.select(dim=1, index=0) # PyTorch 1.3之后 NCHW = [‘N’, ‘C’, ‘H’, ‘W’] images = torch.randn(32, 3, 56, 56, names=NCHW) images.sum('C') images.select('C', index=0) # 也可以这么设置 tensor = torch.rand(3,4,1,2,names=('C', 'N', 'H', 'W')) # 使用align_to可以对维度方便地排序 tensor = tensor.align_to('N', 'C', 'H', 'W') . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%91%BD%E5%90%8D%E5%BC%A0%E9%87%8F",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#命名张量"
+  },"29": {
+    "doc": "PyTorch常用代码段",
+    "title": "数据类型转换",
+    "content": "# 设置默认类型，pytorch中的FloatTensor远远快于DoubleTensor torch.set_default_tensor_type(torch.FloatTensor) # 类型转换 tensor = tensor.cuda() tensor = tensor.cpu() tensor = tensor.float() tensor = tensor.long() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#数据类型转换"
+  },"30": {
+    "doc": "PyTorch常用代码段",
+    "title": "torch.Tensor与np.ndarray转换",
+    "content": "除了CharTensor，其他所有CPU上的张量都支持转换为numpy格式然后再转换回来。 . ndarray = tensor.cpu().numpy() tensor = torch.from_numpy(ndarray).float() tensor = torch.from_numpy(ndarray.copy()).float() # If ndarray has negative stride. ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#torchtensor%E4%B8%8Enpndarray%E8%BD%AC%E6%8D%A2",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#torchtensor与npndarray转换"
+  },"31": {
+    "doc": "PyTorch常用代码段",
+    "title": "Torch.tensor与PIL.Image转换",
+    "content": "# pytorch中的张量默认采用[N, C, H, W]的顺序，并且数据范围在[0,1]，需要进行转置和规范化 # torch.Tensor -&gt; PIL.Image image = PIL.Image.fromarray(torch.clamp(tensor*255, min=0, max=255).byte().permute(1,2,0).cpu().numpy()) image = torchvision.transforms.functional.to_pil_image(tensor)  # Equivalently way # PIL.Image -&gt; torch.Tensor path = r'./figure.jpg' tensor = torch.from_numpy(np.asarray(PIL.Image.open(path))).permute(2,0,1).float() / 255 tensor = torchvision.transforms.functional.to_tensor(PIL.Image.open(path)) # Equivalently way . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#torchtensor%E4%B8%8Epilimage%E8%BD%AC%E6%8D%A2",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#torchtensor与pilimage转换"
+  },"32": {
+    "doc": "PyTorch常用代码段",
+    "title": "np.ndarray与PIL.Image的转换",
+    "content": "image = PIL.Image.fromarray(ndarray.astype(np.uint8)) ndarray = np.asarray(PIL.Image.open(path)) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#npndarray%E4%B8%8Epilimage%E7%9A%84%E8%BD%AC%E6%8D%A2",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#npndarray与pilimage的转换"
+  },"33": {
+    "doc": "PyTorch常用代码段",
+    "title": "从只包含一个元素的张量中提取值",
+    "content": "value = torch.rand(1).item() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%BB%8E%E5%8F%AA%E5%8C%85%E5%90%AB%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%84%E5%BC%A0%E9%87%8F%E4%B8%AD%E6%8F%90%E5%8F%96%E5%80%BC",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#从只包含一个元素的张量中提取值"
+  },"34": {
+    "doc": "PyTorch常用代码段",
+    "title": "张量形变",
+    "content": "# 在将卷积层输入全连接层的情况下通常需要对张量做形变处理， # 相比torch.view，torch.reshape可以自动处理输入张量不连续的情况。 tensor = torch.rand(2,3,4) shape = (6, 4) tensor = torch.reshape(tensor, shape) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BC%A0%E9%87%8F%E5%BD%A2%E5%8F%98",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#张量形变"
+  },"35": {
+    "doc": "PyTorch常用代码段",
+    "title": "打乱顺序",
+    "content": "tensor = tensor[torch.randperm(tensor.size(0))]  # 打乱第一个维度 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%89%93%E4%B9%B1%E9%A1%BA%E5%BA%8F",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#打乱顺序"
+  },"36": {
+    "doc": "PyTorch常用代码段",
+    "title": "水平翻转",
+    "content": "# pytorch不支持tensor[::-1]这样的负步长操作，水平翻转可以通过张量索引实现 # 假设张量的维度为[N, D, H, W]. tensor = tensor[:,:,:,torch.arange(tensor.size(3) - 1, -1, -1).long()] . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%B0%B4%E5%B9%B3%E7%BF%BB%E8%BD%AC",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#水平翻转"
+  },"37": {
+    "doc": "PyTorch常用代码段",
+    "title": "复制张量",
+    "content": "# Operation                 |  New/Shared memory | Still in computation graph | tensor.clone()            # |        New         |          Yes               | tensor.detach()           # |      Shared        |          No                | tensor.detach.clone()()   # |        New         |          No                | . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%A4%8D%E5%88%B6%E5%BC%A0%E9%87%8F",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#复制张量"
+  },"38": {
+    "doc": "PyTorch常用代码段",
+    "title": "张量拼接",
+    "content": "''' 注意torch.cat和torch.stack的区别在于torch.cat沿着给定的维度拼接， 而torch.stack会新增一维。例如当参数是3个10x5的张量，torch.cat的结果是30x5的张量， 而torch.stack的结果是3x10x5的张量。 ''' tensor = torch.cat(list_of_tensors, dim=0) tensor = torch.stack(list_of_tensors, dim=0) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BC%A0%E9%87%8F%E6%8B%BC%E6%8E%A5",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#张量拼接"
+  },"39": {
+    "doc": "PyTorch常用代码段",
+    "title": "将整数标签转为one-hot编码",
+    "content": "# pytorch的标记默认从0开始 tensor = torch.tensor([0, 2, 1, 3]) N = tensor.size(0) num_classes = 4 one_hot = torch.zeros(N, num_classes).long() one_hot.scatter_(dim=1, index=torch.unsqueeze(tensor, dim=1), src=torch.ones(N, num_classes).long()) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%B0%86%E6%95%B4%E6%95%B0%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B8%BAone-hot%E7%BC%96%E7%A0%81",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#将整数标签转为one-hot编码"
+  },"40": {
+    "doc": "PyTorch常用代码段",
+    "title": "得到非零元素",
+    "content": "torch.nonzero(tensor)               # index of non-zero elements torch.nonzero(tensor==0)            # index of zero elements torch.nonzero(tensor).size(0)       # number of non-zero elements torch.nonzero(tensor == 0).size(0)  # number of zero elements . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BE%97%E5%88%B0%E9%9D%9E%E9%9B%B6%E5%85%83%E7%B4%A0",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#得到非零元素"
+  },"41": {
+    "doc": "PyTorch常用代码段",
+    "title": "判断两个张量相等",
+    "content": "torch.allclose(tensor1, tensor2)  # float tensor torch.equal(tensor1, tensor2)     # int tensor . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%88%A4%E6%96%AD%E4%B8%A4%E4%B8%AA%E5%BC%A0%E9%87%8F%E7%9B%B8%E7%AD%89",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#判断两个张量相等"
+  },"42": {
+    "doc": "PyTorch常用代码段",
+    "title": "张量扩展",
+    "content": "# Expand tensor of shape 64*512 to shape 64*512*7*7. tensor = torch.rand(64,512) torch.reshape(tensor, (64, 512, 1, 1)).expand(64, 512, 7, 7) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BC%A0%E9%87%8F%E6%89%A9%E5%B1%95",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#张量扩展"
+  },"43": {
+    "doc": "PyTorch常用代码段",
+    "title": "矩阵乘法",
+    "content": "# Matrix multiplcation: (m*n) * (n*p) * -&gt; (m*p). result = torch.mm(tensor1, tensor2) # Batch matrix multiplication: (b*m*n) * (b*n*p) -&gt; (b*m*p) result = torch.bmm(tensor1, tensor2) # Element-wise multiplication. result = tensor1 * tensor2 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#矩阵乘法"
+  },"44": {
+    "doc": "PyTorch常用代码段",
+    "title": "计算两组数据之间的两两欧式距离",
+    "content": "利用broadcast机制 . dist = torch.sqrt(torch.sum((X1[:,None,:] - X2) ** 2, dim=2)) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E8%AE%A1%E7%AE%97%E4%B8%A4%E7%BB%84%E6%95%B0%E6%8D%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E4%B8%A4%E4%B8%A4%E6%AC%A7%E5%BC%8F%E8%B7%9D%E7%A6%BB",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#计算两组数据之间的两两欧式距离"
+  },"45": {
+    "doc": "PyTorch常用代码段",
+    "title": "3. 模型定义和操作",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#3-%E6%A8%A1%E5%9E%8B%E5%AE%9A%E4%B9%89%E5%92%8C%E6%93%8D%E4%BD%9C",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#3-模型定义和操作"
+  },"46": {
+    "doc": "PyTorch常用代码段",
+    "title": "一个简单两层卷积网络的示例",
+    "content": "# convolutional neural network (2 convolutional layers) class ConvNet(nn.Module):     def __init__(self, num_classes=10):         super(ConvNet, self).__init__()         self.layer1 = nn.Sequential(             nn.Conv2d(1, 16, kernel_size=5, stride=1, padding=2),             nn.BatchNorm2d(16),             nn.ReLU(),             nn.MaxPool2d(kernel_size=2, stride=2))         self.layer2 = nn.Sequential(             nn.Conv2d(16, 32, kernel_size=5, stride=1, padding=2),             nn.BatchNorm2d(32),             nn.ReLU(),             nn.MaxPool2d(kernel_size=2, stride=2))         self.fc = nn.Linear(7*7*32, num_classes)     def forward(self, x):         out = self.layer1(x)         out = self.layer2(out)         out = out.reshape(out.size(0), -1)         out = self.fc(out)         return out model = ConvNet(num_classes).to(device) . 卷积层的计算和展示可以用这个网站辅助。 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E4%B8%A4%E5%B1%82%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%E7%9A%84%E7%A4%BA%E4%BE%8B",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#一个简单两层卷积网络的示例"
+  },"47": {
+    "doc": "PyTorch常用代码段",
+    "title": "双线性汇合（bilinear pooling）",
+    "content": "X = torch.reshape(N, D, H * W)                        # Assume X has shape N*D*H*W X = torch.bmm(X, torch.transpose(X, 1, 2)) / (H * W)  # Bilinear pooling assert X.size() == (N, D, D) X = torch.reshape(X, (N, D * D)) X = torch.sign(X) * torch.sqrt(torch.abs(X) + 1e-5)   # Signed-sqrt normalization X = torch.nn.functional.normalize(X)                  # L2 normalization . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%8F%8C%E7%BA%BF%E6%80%A7%E6%B1%87%E5%90%88bilinear-pooling",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#双线性汇合bilinear-pooling"
+  },"48": {
+    "doc": "PyTorch常用代码段",
+    "title": "多卡同步 BN（Batch normalization）",
+    "content": "当使用 torch.nn.DataParallel 将代码运行在多张 GPU 卡上时，PyTorch 的 BN 层默认操作是各卡上数据独立地计算均值和标准差，同步 BN 使用所有卡上的数据一起计算 BN 层的均值和标准差，缓解了当批量大小（batch size）比较小时对均值和标准差估计不准的情况，是在目标检测等任务中一个有效的提升性能的技巧。 . sync_bn = torch.nn.SyncBatchNorm(num_features, eps=1e-05, momentum=0.1, affine=True,                                  track_running_stats=True) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%A4%9A%E5%8D%A1%E5%90%8C%E6%AD%A5-bnbatch-normalization",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#多卡同步-bnbatch-normalization"
+  },"49": {
+    "doc": "PyTorch常用代码段",
+    "title": "将已有网络的所有BN层改为同步BN层",
+    "content": "def convertBNtoSyncBN(module, process_group=None):     '''Recursively replace all BN layers to SyncBN layer.     Args:         module[torch.nn.Module]. Network     '''     if isinstance(module, torch.nn.modules.batchnorm._BatchNorm):         sync_bn = torch.nn.SyncBatchNorm(module.num_features, module.eps, module.momentum,                                          module.affine, module.track_running_stats, process_group)         sync_bn.running_mean = module.running_mean         sync_bn.running_var = module.running_var         if module.affine:             sync_bn.weight = module.weight.clone().detach()             sync_bn.bias = module.bias.clone().detach()         return sync_bn     else:         for name, child_module in module.named_children():             setattr(module, name) = convert_syncbn_model(child_module, process_group=process_group))         return module . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%B0%86%E5%B7%B2%E6%9C%89%E7%BD%91%E7%BB%9C%E7%9A%84%E6%89%80%E6%9C%89bn%E5%B1%82%E6%94%B9%E4%B8%BA%E5%90%8C%E6%AD%A5bn%E5%B1%82",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#将已有网络的所有bn层改为同步bn层"
+  },"50": {
+    "doc": "PyTorch常用代码段",
+    "title": "类似 BN 滑动平均",
+    "content": "如果要实现类似 BN 滑动平均的操作，在 forward 函数中要使用原地（inplace）操作给滑动平均赋值。 . class BN(torch.nn.Module)     def __init__(self):         ...         self.register_buffer('running_mean', torch.zeros(num_features))     def forward(self, X):         ...         self.running_mean += momentum * (current - self.running_mean) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E7%B1%BB%E4%BC%BC-bn-%E6%BB%91%E5%8A%A8%E5%B9%B3%E5%9D%87",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#类似-bn-滑动平均"
+  },"51": {
+    "doc": "PyTorch常用代码段",
+    "title": "计算模型整体参数量",
+    "content": "num_parameters = sum(torch.numel(parameter) for parameter in model.parameters()) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E8%AE%A1%E7%AE%97%E6%A8%A1%E5%9E%8B%E6%95%B4%E4%BD%93%E5%8F%82%E6%95%B0%E9%87%8F",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#计算模型整体参数量"
+  },"52": {
+    "doc": "PyTorch常用代码段",
+    "title": "查看网络中的参数",
+    "content": "可以通过model.state_dict()或者model.named_parameters()函数查看现在的全部可训练参数（包括通过继承得到的父类中的参数） . params = list(model.named_parameters()) (name, param) = params[28] print(name) print(param.grad) print('-------------------------------------------------') (name2, param2) = params[29] print(name2) print(param2.grad) print('----------------------------------------------------') (name1, param1) = params[30] print(name1) print(param1.grad) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#查看网络中的参数"
+  },"53": {
+    "doc": "PyTorch常用代码段",
+    "title": "模型可视化（使用pytorchviz）",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%A8%A1%E5%9E%8B%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BD%BF%E7%94%A8pytorchviz",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#模型可视化使用pytorchviz"
+  },"54": {
+    "doc": "PyTorch常用代码段",
+    "title": "类似 Keras 的 model.summary() 输出模型信息（使用pytorch-summary ）",
+    "content": "模型权重初始化 注意 model.modules() 和 model.children() 的区别：model.modules() 会迭代地遍历模型的所有子层，而 model.children() 只会遍历模型下的一层。 . # Common practise for initialization. for layer in model.modules():     if isinstance(layer, torch.nn.Conv2d):         torch.nn.init.kaiming_normal_(layer.weight, mode='fan_out',                                       nonlinearity='relu')         if layer.bias is not None:             torch.nn.init.constant_(layer.bias, val=0.0)     elif isinstance(layer, torch.nn.BatchNorm2d):         torch.nn.init.constant_(layer.weight, val=1.0)         torch.nn.init.constant_(layer.bias, val=0.0)     elif isinstance(layer, torch.nn.Linear):         torch.nn.init.xavier_normal_(layer.weight)         if layer.bias is not None:             torch.nn.init.constant_(layer.bias, val=0.0) # Initialization with given tensor. layer.weight = torch.nn.Parameter(tensor) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E7%B1%BB%E4%BC%BC-keras-%E7%9A%84-modelsummary-%E8%BE%93%E5%87%BA%E6%A8%A1%E5%9E%8B%E4%BF%A1%E6%81%AF%E4%BD%BF%E7%94%A8pytorch-summary-",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#类似-keras-的-modelsummary-输出模型信息使用pytorch-summary-"
+  },"55": {
+    "doc": "PyTorch常用代码段",
+    "title": "提取模型中的某一层",
+    "content": "modules()会返回模型中所有模块的迭代器，它能够访问到最内层，比如self.layer1.conv1这个模块，还有一个与它们相对应的是name_children()属性以及named_modules(),这两个不仅会返回模块的迭代器，还会返回网络层的名字。 . # 取模型中的前两层 new_model = nn.Sequential(*list(model.children())[:2] # 如果希望提取出模型中的所有卷积层，可以像下面这样操作： for layer in model.named_modules():     if isinstance(layer[1],nn.Conv2d):          conv_model.add_module(layer[0],layer[1]) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%8F%90%E5%8F%96%E6%A8%A1%E5%9E%8B%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%80%E5%B1%82",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#提取模型中的某一层"
+  },"56": {
+    "doc": "PyTorch常用代码段",
+    "title": "部分层使用预训练模型",
+    "content": "注意如果保存的模型是 torch.nn.DataParallel，则当前的模型也需要是 . model.load_state_dict(torch.load('model.pth'), strict=False) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E9%83%A8%E5%88%86%E5%B1%82%E4%BD%BF%E7%94%A8%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#部分层使用预训练模型"
+  },"57": {
+    "doc": "PyTorch常用代码段",
+    "title": "将在 GPU 保存的模型加载到 CPU",
+    "content": "model.load_state_dict(torch.load('model.pth', map_location='cpu')) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%B0%86%E5%9C%A8-gpu-%E4%BF%9D%E5%AD%98%E7%9A%84%E6%A8%A1%E5%9E%8B%E5%8A%A0%E8%BD%BD%E5%88%B0-cpu",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#将在-gpu-保存的模型加载到-cpu"
+  },"58": {
+    "doc": "PyTorch常用代码段",
+    "title": "导入另一个模型的相同部分到新的模型",
+    "content": "模型导入参数时，如果两个模型结构不一致，则直接导入参数会报错。用下面方法可以把另一个模型的相同的部分导入到新的模型中。 . # model_new代表新的模型 # model_saved代表其他模型，比如用torch.load导入的已保存的模型 model_new_dict = model_new.state_dict() model_common_dict = {k:v for k, v in model_saved.items() if k in model_new_dict.keys()} model_new_dict.update(model_common_dict) model_new.load_state_dict(model_new_dict) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%AF%BC%E5%85%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%9B%B8%E5%90%8C%E9%83%A8%E5%88%86%E5%88%B0%E6%96%B0%E7%9A%84%E6%A8%A1%E5%9E%8B",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#导入另一个模型的相同部分到新的模型"
+  },"59": {
+    "doc": "PyTorch常用代码段",
+    "title": "4. 数据处理",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#4-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#4-数据处理"
+  },"60": {
+    "doc": "PyTorch常用代码段",
+    "title": "计算数据集的均值和标准差",
+    "content": "import os import cv2 import numpy as np from torch.utils.data import Dataset from PIL import Image def compute_mean_and_std(dataset):     # 输入PyTorch的dataset，输出均值和标准差     mean_r = 0     mean_g = 0     mean_b = 0     for img, _ in dataset:         img = np.asarray(img) # change PIL Image to numpy array         mean_r += np.mean(img[:, :, 0])         mean_g += np.mean(img[:, :, 1])         mean_b += np.mean(img[:, :, 2])     mean_r /= len(dataset)     mean_g /= len(dataset)     mean_b /= len(dataset)     diff_r = 0     diff_g = 0     diff_b = 0     N = 0     for img, _ in dataset:         img = np.asarray(img)         diff_r += np.sum(np.power(img[:, :, 0] - mean_r, 2))         diff_g += np.sum(np.power(img[:, :, 1] - mean_g, 2))         diff_b += np.sum(np.power(img[:, :, 2] - mean_b, 2))         N += np.prod(img[:, :, 0].shape)     std_r = np.sqrt(diff_r / N)     std_g = np.sqrt(diff_g / N)     std_b = np.sqrt(diff_b / N)     mean = (mean_r.item() / 255.0, mean_g.item() / 255.0, mean_b.item() / 255.0)     std = (std_r.item() / 255.0, std_g.item() / 255.0, std_b.item() / 255.0)     return mean, std . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E8%AE%A1%E7%AE%97%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%9D%87%E5%80%BC%E5%92%8C%E6%A0%87%E5%87%86%E5%B7%AE",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#计算数据集的均值和标准差"
+  },"61": {
+    "doc": "PyTorch常用代码段",
+    "title": "得到视频数据基本信息",
+    "content": "import cv2 video = cv2.VideoCapture(mp4_path) height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT)) width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH)) num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT)) fps = int(video.get(cv2.CAP_PROP_FPS)) video.release() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BE%97%E5%88%B0%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#得到视频数据基本信息"
+  },"62": {
+    "doc": "PyTorch常用代码段",
+    "title": "TSN 每段（segment）采样一帧视频",
+    "content": "K = self._num_segments if is_train:     if num_frames &gt; K:         # Random index for each segment.         frame_indices = torch.randint(             high=num_frames // K, size=(K,), dtype=torch.long)         frame_indices += num_frames // K * torch.arange(K)     else:         frame_indices = torch.randint(             high=num_frames, size=(K - num_frames,), dtype=torch.long)         frame_indices = torch.sort(torch.cat((             torch.arange(num_frames), frame_indices)))[0] else:     if num_frames &gt; K:         # Middle index for each segment.         frame_indices = num_frames / K // 2         frame_indices += num_frames // K * torch.arange(K)     else:         frame_indices = torch.sort(torch.cat((             torch.arange(num_frames), torch.arange(K - num_frames))))[0] assert frame_indices.size() == (K,) return [frame_indices[i] for i in range(K)] . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#tsn-%E6%AF%8F%E6%AE%B5segment%E9%87%87%E6%A0%B7%E4%B8%80%E5%B8%A7%E8%A7%86%E9%A2%91",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#tsn-每段segment采样一帧视频"
+  },"63": {
+    "doc": "PyTorch常用代码段",
+    "title": "常用训练和验证数据预处理",
+    "content": "其中 ToTensor 操作会将 PIL.Image 或形状为 H×W×D，数值范围为 [0, 255] 的 np.ndarray 转换为形状为 D×H×W，数值范围为 [0.0, 1.0] 的 torch.Tensor。 . train_transform = torchvision.transforms.Compose([     torchvision.transforms.RandomResizedCrop(size=224,                                              scale=(0.08, 1.0)),     torchvision.transforms.RandomHorizontalFlip(),     torchvision.transforms.ToTensor(),     torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),                                      std=(0.229, 0.224, 0.225)),  ])  val_transform = torchvision.transforms.Compose([     torchvision.transforms.Resize(256),     torchvision.transforms.CenterCrop(224),     torchvision.transforms.ToTensor(),     torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),                                      std=(0.229, 0.224, 0.225)), ]) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%B8%B8%E7%94%A8%E8%AE%AD%E7%BB%83%E5%92%8C%E9%AA%8C%E8%AF%81%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#常用训练和验证数据预处理"
+  },"64": {
+    "doc": "PyTorch常用代码段",
+    "title": "5. 模型训练和测试",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#5-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%92%8C%E6%B5%8B%E8%AF%95",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#5-模型训练和测试"
+  },"65": {
+    "doc": "PyTorch常用代码段",
+    "title": "分类模型训练代码",
+    "content": "# Loss and optimizer criterion = nn.CrossEntropyLoss() optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate) # Train the model total_step = len(train_loader) for epoch in range(num_epochs):     for i ,(images, labels) in enumerate(train_loader):         images = images.to(device)         labels = labels.to(device)         # Forward pass         outputs = model(images)         loss = criterion(outputs, labels)         # Backward and optimizer         optimizer.zero_grad()         loss.backward()         optimizer.step()         if (i+1) % 100 == 0:             print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'                   .format(epoch+1, num_epochs, i+1, total_step, loss.item())) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E4%BB%A3%E7%A0%81",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#分类模型训练代码"
+  },"66": {
+    "doc": "PyTorch常用代码段",
+    "title": "分类模型测试代码",
+    "content": "# Test the model model.eval()  # eval mode(batch norm uses moving mean/variance               #instead of mini-batch mean/variance) with torch.no_grad():     correct = 0     total = 0     for images, labels in test_loader:         images = images.to(device)         labels = labels.to(device)         outputs = model(images)         _, predicted = torch.max(outputs.data, 1)         total += labels.size(0)         correct += (predicted == labels).sum().item()     print('Test accuracy of the model on the 10000 test images: {} %'           .format(100 * correct / total)) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#分类模型测试代码"
+  },"67": {
+    "doc": "PyTorch常用代码段",
+    "title": "自定义loss",
+    "content": "继承torch.nn.Module类写自己的loss。 . class MyLoss(torch.nn.Moudle):     def __init__(self):         super(MyLoss, self).__init__()     def forward(self, x, y):         loss = torch.mean((x - y) ** 2)         return loss . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E8%87%AA%E5%AE%9A%E4%B9%89loss",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#自定义loss"
+  },"68": {
+    "doc": "PyTorch常用代码段",
+    "title": "标签平滑（label smoothing）",
+    "content": "写一个label_smoothing.py的文件，然后在训练代码里引用，用LSR代替交叉熵损失即可。label_smoothing.py内容如下： . import torch import torch.nn as nn class LSR(nn.Module):     def __init__(self, e=0.1, reduction='mean'):         super().__init__()         self.log_softmax = nn.LogSoftmax(dim=1)         self.e = e         self.reduction = reduction     def _one_hot(self, labels, classes, value=1):         \"\"\"             Convert labels to one hot vectors         Args:             labels: torch tensor in format [label1, label2, label3, ...]             classes: int, number of classes             value: label value in one hot vector, default to 1         Returns:             return one hot format labels in shape [batchsize, classes]         \"\"\"         one_hot = torch.zeros(labels.size(0), classes)         #labels and value_added  size must match         labels = labels.view(labels.size(0), -1)         value_added = torch.Tensor(labels.size(0), 1).fill_(value)         value_added = value_added.to(labels.device)         one_hot = one_hot.to(labels.device)         one_hot.scatter_add_(1, labels, value_added)         return one_hot     def _smooth_label(self, target, length, smooth_factor):         \"\"\"convert targets to one-hot format, and smooth         them.         Args:             target: target in form with [label1, label2, label_batchsize]             length: length of one-hot format(number of classes)             smooth_factor: smooth factor for label smooth         Returns:             smoothed labels in one hot format         \"\"\"         one_hot = self._one_hot(target, length, value=1 - smooth_factor)         one_hot += smooth_factor / (length - 1)         return one_hot.to(target.device)     def forward(self, x, target):         if x.size(0) != target.size(0):             raise ValueError('Expected input batchsize ({}) to match target batch_size({})'                     .format(x.size(0), target.size(0)))         if x.dim() &lt; 2:             raise ValueError('Expected input tensor to have least 2 dimensions(got {})'                     .format(x.size(0)))         if x.dim() != 2:             raise ValueError('Only 2 dimension tensor are implemented, (got {})'                     .format(x.size()))         smoothed_target = self._smooth_label(target, x.size(1), self.e)         x = self.log_softmax(x)         loss = torch.sum(- x * smoothed_target, dim=1)         if self.reduction == 'none':             return loss         elif self.reduction == 'sum':             return torch.sum(loss)         elif self.reduction == 'mean':             return torch.mean(loss)         else:             raise ValueError('unrecognized option, expect reduction to be one of none, mean, sum') . 或者直接在训练文件里做label smoothing . for images, labels in train_loader:     images, labels = images.cuda(), labels.cuda()     N = labels.size(0)     # C is the number of classes.     smoothed_labels = torch.full(size=(N, C), fill_value=0.1 / (C - 1)).cuda()     smoothed_labels.scatter_(dim=1, index=torch.unsqueeze(labels, dim=1), value=0.9)     score = model(images)     log_prob = torch.nn.functional.log_softmax(score, dim=1)     loss = -torch.sum(log_prob * smoothed_labels) / N     optimizer.zero_grad()     loss.backward()     optimizer.step() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%A0%87%E7%AD%BE%E5%B9%B3%E6%BB%91label-smoothing",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#标签平滑label-smoothing"
+  },"69": {
+    "doc": "PyTorch常用代码段",
+    "title": "Mixup训练",
+    "content": "beta_distribution = torch.distributions.beta.Beta(alpha, alpha) for images, labels in train_loader:     images, labels = images.cuda(), labels.cuda()     # Mixup images and labels.     lambda_ = beta_distribution.sample([]).item()     index = torch.randperm(images.size(0)).cuda()     mixed_images = lambda_ * images + (1 - lambda_) * images[index, :]     label_a, label_b = labels, labels[index]     # Mixup loss.     scores = model(mixed_images)     loss = (lambda_ * loss_function(scores, label_a)             + (1 - lambda_) * loss_function(scores, label_b))     optimizer.zero_grad()     loss.backward()     optimizer.step() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#mixup%E8%AE%AD%E7%BB%83",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#mixup训练"
+  },"70": {
+    "doc": "PyTorch常用代码段",
+    "title": "L1 正则化",
+    "content": "l1_regularization = torch.nn.L1Loss(reduction='sum') loss = ...  # Standard cross-entropy loss for param in model.parameters():     loss += torch.sum(torch.abs(param)) loss.backward() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#l1-%E6%AD%A3%E5%88%99%E5%8C%96",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#l1-正则化"
+  },"71": {
+    "doc": "PyTorch常用代码段",
+    "title": "不对偏置项进行权重衰减（weight decay）",
+    "content": "pytorch里的weight decay相当于l2正则 . bias_list = (param for name, param in model.named_parameters() if name[-4:] == 'bias') others_list = (param for name, param in model.named_parameters() if name[-4:] != 'bias') parameters = [{'parameters': bias_list, 'weight_decay': 0},               {'parameters': others_list}] optimizer = torch.optim.SGD(parameters, lr=1e-2, momentum=0.9, weight_decay=1e-4) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%B8%8D%E5%AF%B9%E5%81%8F%E7%BD%AE%E9%A1%B9%E8%BF%9B%E8%A1%8C%E6%9D%83%E9%87%8D%E8%A1%B0%E5%87%8Fweight-decay",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#不对偏置项进行权重衰减weight-decay"
+  },"72": {
+    "doc": "PyTorch常用代码段",
+    "title": "梯度裁剪（gradient clipping）",
+    "content": "torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=20) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%A2%AF%E5%BA%A6%E8%A3%81%E5%89%AAgradient-clipping",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#梯度裁剪gradient-clipping"
+  },"73": {
+    "doc": "PyTorch常用代码段",
+    "title": "得到当前学习率",
+    "content": "# If there is one global learning rate (which is the common case). lr = next(iter(optimizer.param_groups))['lr'] # If there are multiple learning rates for different layers. all_lr = [] for param_group in optimizer.param_groups:     all_lr.append(param_group['lr']) . 另一种方法，在一个batch训练代码里，当前的lr是optimizer.param_groups[0][‘lr’] . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BE%97%E5%88%B0%E5%BD%93%E5%89%8D%E5%AD%A6%E4%B9%A0%E7%8E%87",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#得到当前学习率"
+  },"74": {
+    "doc": "PyTorch常用代码段",
+    "title": "学习率衰减",
+    "content": "# Reduce learning rate when validation accuarcy plateau. scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', patience=5, verbose=True) for t in range(0, 80):     train(...)     val(...)     scheduler.step(val_acc) # Cosine annealing learning rate. scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=80) # Reduce learning rate by 10 at given epochs. scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[50, 70], gamma=0.1) for t in range(0, 80):     scheduler.step()     train(...)     val(...) # Learning rate warmup by 10 epochs. scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda t: t / 10) for t in range(0, 10):     scheduler.step()     train(...)     val(...) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%A1%B0%E5%87%8F",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#学习率衰减"
+  },"75": {
+    "doc": "PyTorch常用代码段",
+    "title": "优化器链式更新",
+    "content": "从1.4版本开始，torch.optim.lr_scheduler 支持链式更新（chaining），即用户可以定义两个 schedulers，并交替在训练中使用。 . import torch from torch.optim import SGD from torch.optim.lr_scheduler import ExponentialLR, StepLR model = [torch.nn.Parameter(torch.randn(2, 2, requires_grad=True))] optimizer = SGD(model, 0.1) scheduler1 = ExponentialLR(optimizer, gamma=0.9) scheduler2 = StepLR(optimizer, step_size=3, gamma=0.1) for epoch in range(4):     print(epoch, scheduler2.get_last_lr()[0])     optimizer.step()     scheduler1.step()     scheduler2.step() . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%BC%98%E5%8C%96%E5%99%A8%E9%93%BE%E5%BC%8F%E6%9B%B4%E6%96%B0",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#优化器链式更新"
+  },"76": {
+    "doc": "PyTorch常用代码段",
+    "title": "模型训练可视化",
+    "content": "PyTorch可以使用tensorboard来可视化训练过程。 安装和运行TensorBoard。 . pip install tensorboard tensorboard --logdir=runs . 使用SummaryWriter类来收集和可视化相应的数据，放了方便查看，可以使用不同的文件夹，比如’Loss/train’和’Loss/test’。 . from torch.utils.tensorboard import SummaryWriter import numpy as np writer = SummaryWriter() for n_iter in range(100):     writer.add_scalar('Loss/train', np.random.random(), n_iter)     writer.add_scalar('Loss/test', np.random.random(), n_iter)     writer.add_scalar('Accuracy/train', np.random.random(), n_iter)     writer.add_scalar('Accuracy/test', np.random.random(), n_iter) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%8F%AF%E8%A7%86%E5%8C%96",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#模型训练可视化"
+  },"77": {
+    "doc": "PyTorch常用代码段",
+    "title": "保存与加载断点",
+    "content": "注意为了能够恢复训练，我们需要同时保存模型和优化器的状态，以及当前的训练轮数。 . start_epoch = 0 # Load checkpoint. if resume: # resume为参数，第一次训练时设为0，中断再训练时设为1     model_path = os.path.join('model', 'best_checkpoint.pth.tar')     assert os.path.isfile(model_path)     checkpoint = torch.load(model_path)     best_acc = checkpoint['best_acc']     start_epoch = checkpoint['epoch']     model.load_state_dict(checkpoint['model'])     optimizer.load_state_dict(checkpoint['optimizer'])     print('Load checkpoint at epoch {}.'.format(start_epoch))     print('Best accuracy so far {}.'.format(best_acc)) # Train the model for epoch in range(start_epoch, num_epochs):     ...     # Test the model     ...     # save checkpoint     is_best = current_acc &gt; best_acc     best_acc = max(current_acc, best_acc)     checkpoint = {         'best_acc': best_acc,         'epoch': epoch + 1,         'model': model.state_dict(),         'optimizer': optimizer.state_dict(),     }     model_path = os.path.join('model', 'checkpoint.pth.tar')     best_model_path = os.path.join('model', 'best_checkpoint.pth.tar')     torch.save(checkpoint, model_path)     if is_best:         shutil.copy(model_path, best_model_path) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%BF%9D%E5%AD%98%E4%B8%8E%E5%8A%A0%E8%BD%BD%E6%96%AD%E7%82%B9",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#保存与加载断点"
+  },"78": {
+    "doc": "PyTorch常用代码段",
+    "title": "提取 ImageNet 预训练模型某层的卷积特征",
+    "content": "# VGG-16 relu5-3 feature. model = torchvision.models.vgg16(pretrained=True).features[:-1] # VGG-16 pool5 feature. model = torchvision.models.vgg16(pretrained=True).features # VGG-16 fc7 feature. model = torchvision.models.vgg16(pretrained=True) model.classifier = torch.nn.Sequential(*list(model.classifier.children())[:-3]) # ResNet GAP feature. model = torchvision.models.resnet18(pretrained=True) model = torch.nn.Sequential(collections.OrderedDict(     list(model.named_children())[:-1])) with torch.no_grad():     model.eval()     conv_representation = model(image) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%8F%90%E5%8F%96-imagenet-%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E6%9F%90%E5%B1%82%E7%9A%84%E5%8D%B7%E7%A7%AF%E7%89%B9%E5%BE%81",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#提取-imagenet-预训练模型某层的卷积特征"
+  },"79": {
+    "doc": "PyTorch常用代码段",
+    "title": "提取 ImageNet 预训练模型多层的卷积特征",
+    "content": "class FeatureExtractor(torch.nn.Module):     \"\"\"Helper class to extract several convolution features from the given     pre-trained model.     Attributes:         _model, torch.nn.Module.         _layers_to_extract, list&lt;str&gt; or set&lt;str&gt;     Example:         &gt;&gt;&gt; model = torchvision.models.resnet152(pretrained=True)         &gt;&gt;&gt; model = torch.nn.Sequential(collections.OrderedDict(                 list(model.named_children())[:-1]))         &gt;&gt;&gt; conv_representation = FeatureExtractor(                 pretrained_model=model,                 layers_to_extract={'layer1', 'layer2', 'layer3', 'layer4'})(image)     \"\"\"     def __init__(self, pretrained_model, layers_to_extract):         torch.nn.Module.__init__(self)         self._model = pretrained_model         self._model.eval()         self._layers_to_extract = set(layers_to_extract)     def forward(self, x):         with torch.no_grad():             conv_representation = []             for name, layer in self._model.named_children():                 x = layer(x)                 if name in self._layers_to_extract:                     conv_representation.append(x)             return conv_representation . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E6%8F%90%E5%8F%96-imagenet-%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%A4%9A%E5%B1%82%E7%9A%84%E5%8D%B7%E7%A7%AF%E7%89%B9%E5%BE%81",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#提取-imagenet-预训练模型多层的卷积特征"
+  },"80": {
+    "doc": "PyTorch常用代码段",
+    "title": "微调全连接层",
+    "content": "model = torchvision.models.resnet18(pretrained=True) for param in model.parameters():     param.requires_grad = False model.fc = nn.Linear(512, 100)  # Replace the last fc layer optimizer = torch.optim.SGD(model.fc.parameters(), lr=1e-2, momentum=0.9, weight_decay=1e-4) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E5%BE%AE%E8%B0%83%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%B1%82",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#微调全连接层"
+  },"81": {
+    "doc": "PyTorch常用代码段",
+    "title": "以较大学习率微调全连接层，较小学习率微调卷积层",
+    "content": "model = torchvision.models.resnet18(pretrained=True) finetuned_parameters = list(map(id, model.fc.parameters())) conv_parameters = (p for p in model.parameters() if id(p) not in finetuned_parameters) parameters = [{'params': conv_parameters, 'lr': 1e-3},               {'params': model.fc.parameters()}] optimizer = torch.optim.SGD(parameters, lr=1e-2, momentum=0.9, weight_decay=1e-4) . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#%E4%BB%A5%E8%BE%83%E5%A4%A7%E5%AD%A6%E4%B9%A0%E7%8E%87%E5%BE%AE%E8%B0%83%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%B1%82%E8%BE%83%E5%B0%8F%E5%AD%A6%E4%B9%A0%E7%8E%87%E5%BE%AE%E8%B0%83%E5%8D%B7%E7%A7%AF%E5%B1%82",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#以较大学习率微调全连接层较小学习率微调卷积层"
+  },"82": {
+    "doc": "PyTorch常用代码段",
+    "title": "6. 其他注意事项",
+    "content": ". | 不要使用太大的线性层。因为nn.Linear(m,n)使用的是 的内存，线性层太大很容易超出现有显存。 | 不要在太长的序列上使用RNN。因为RNN反向传播使用的是BPTT算法，其需要的内存和输入序列的长度呈线性关系。 | model(x) 前用 model.train() 和 model.eval() 切换网络状态。 | 不需要计算梯度的代码块用 with torch.no_grad() 包含起来。 | model.eval() 和 torch.no_grad() 的区别在于，model.eval() 是将网络切换为测试状态，例如 BN 和dropout在训练和测试阶段使用不同的计算方法。torch.no_grad() 是关闭 PyTorch 张量的自动求导机制，以减少存储使用和加速计算，得到的结果无法进行 loss.backward()。 | model.zero_grad()会把整个模型的参数的梯度都归零, 而optimizer.zero_grad()只会把传入其中的参数的梯度归零. | torch.nn.CrossEntropyLoss 的输入不需要经过 Softmax。torch.nn.CrossEntropyLoss 等价于 torch.nn.functional.log_softmax + torch.nn.NLLLoss。 | loss.backward() 前用 optimizer.zero_grad() 清除累积梯度。 | torch.utils.data.DataLoader 中尽量设置 pin_memory=True，对特别小的数据集如 MNIST 设置 pin_memory=False 反而更快一些。num_workers 的设置需要在实验中找到最快的取值。 | 用 del 及时删除不用的中间变量，节约 GPU 存储。 | 使用 inplace 操作可节约 GPU 存储，如 x = torch.nn.functional.relu(x, inplace=True) . | 减少 CPU 和 GPU 之间的数据传输。例如如果你想知道一个 epoch 中每个 mini-batch 的 loss 和准确率，先将它们累积在 GPU 中等一个 epoch 结束之后一起传输回 CPU 会比每个 mini-batch 都进行一次 GPU 到 CPU 的传输更快。 | 使用半精度浮点数 half() 会有一定的速度提升，具体效率依赖于 GPU 型号。需要小心数值精度过低带来的稳定性问题。 | 时常使用 assert tensor.size() == (N, D, H, W) 作为调试手段，确保张量维度和你设想中一致。 | 除了标记 y 外，尽量少使用一维张量，使用 n*1 的二维张量代替，可以避免一些意想不到的一维张量计算结果。 | 统计代码各部分耗时 with torch.autograd.profiler.profile(enabled=True, use_cuda=False) as profile:     ... print(profile) # 或者在命令行运行 python -m torch.utils.bottleneck main.py . | 使用TorchSnooper来调试PyTorch代码，程序在执行的时候，就会自动 print 出来每一行的执行结果的 tensor 的形状、数据类型、设备、是否需要梯度的信息。 # pip install torchsnooper import torchsnooper # 对于函数，使用修饰器 @torchsnooper.snoop() # 如果不是函数，使用 with 语句来激活 TorchSnooper，把训练的那个循环装进 with 语句中去。 with torchsnooper.snoop():     原本的代码 . | 模型可解释性，使用captum库 | . 原文链接：[深度学习框架]PyTorch常用代码段-知乎 . ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#6-%E5%85%B6%E4%BB%96%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/#6-其他注意事项"
+  },"83": {
+    "doc": "PyTorch常用代码段",
+    "title": "PyTorch常用代码段",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/",
+    "relUrl": "/docs/Python/pytorch/Pytorch%20%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%90%88%E9%9B%86/"
+  },"84": {
+    "doc": "Home",
+    "title": "寒山见诸君",
+    "content": " ",
+    "url": "http://localhost:4000/#%E5%AF%92%E5%B1%B1%E8%A7%81%E8%AF%B8%E5%90%9B",
+    "relUrl": "/#寒山见诸君"
+  },"85": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"86": {
+    "doc": "Pandas",
+    "title": "Pandas",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pandas/pandas/",
+    "relUrl": "/docs/Python/pandas/pandas/"
+  },"87": {
+    "doc": "Python codebase",
+    "title": "Python codebase",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/python%20codebase/",
+    "relUrl": "/docs/Python/Python%20codebase/python%20codebase/"
+  },"88": {
+    "doc": "Python",
+    "title": "Python",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/python/",
+    "relUrl": "/docs/Python/python/"
+  },"89": {
+    "doc": "Python 多进程",
+    "title": "Python多进程",
+    "content": "Created: 2020-05-31 Tags: #python, #多进程 . 多进程可以用于提高代码的运行速度，尤其是在批量处理数据的时候，Python 多进程主要使用multiprocess 库，下边通过一个例子介绍其用法 . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/#python%E5%A4%9A%E8%BF%9B%E7%A8%8B",
+    "relUrl": "/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/#python多进程"
+  },"90": {
+    "doc": "Python 多进程",
+    "title": "问题背景：对一个长列表进行遍历，对于其中的元素进行操作",
+    "content": "定义对元素进行操作的函数为func_item，遍历列表并对其进行逐元素操作的方法为func_list，不使用多进程时，代码如下所示： . def func_item(item): pass def func_list(l:list): for item in l.items(): func_item(item) def main(): l = list() func_list(l) . 上述代码为从前往后对列表进行遍历，效率较低。 . 改成多进程后，代码如下： . import multiprocess # 遍历以及操作的函数不变 def func_item(item): pass def func_list(l:list): for item in l.items(): func_item(item) # 在main函数中做如下改动： def main(): pool = multiprocess(10) # 申请10个进程池 l = list() for i in range(100): if i*10000&gt;len(l): break # 对于每个进程传入一个子列表 pool.apply(func= func_list, args = (l[i:min(i*10000,len(l))])) # 这里的pool.close()是说关闭pool，使其不在接受新的（主进程）任务 pool.close() # 这里的pool.join()是说：主进程阻塞后，让子进程继续运行完成 # 子进程运行完后，再把主进程全部关掉。 pool.join() . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/#%E9%97%AE%E9%A2%98%E8%83%8C%E6%99%AF%E5%AF%B9%E4%B8%80%E4%B8%AA%E9%95%BF%E5%88%97%E8%A1%A8%E8%BF%9B%E8%A1%8C%E9%81%8D%E5%8E%86%E5%AF%B9%E4%BA%8E%E5%85%B6%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C",
+    "relUrl": "/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/#问题背景对一个长列表进行遍历对于其中的元素进行操作"
+  },"91": {
+    "doc": "Python 多进程",
+    "title": "Python 多进程",
+    "content": "[toc] . ",
+    "url": "http://localhost:4000/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/",
+    "relUrl": "/docs/Python/Python%20codebase/python%E5%A4%9A%E8%BF%9B%E7%A8%8B/"
+  },"92": {
+    "doc": "Pytorch",
+    "title": "Pandas",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/pytorch/#pandas",
+    "relUrl": "/docs/Python/pytorch/pytorch/#pandas"
+  },"93": {
+    "doc": "Pytorch",
+    "title": "Pytorch",
+    "content": " ",
+    "url": "http://localhost:4000/docs/Python/pytorch/pytorch/",
+    "relUrl": "/docs/Python/pytorch/pytorch/"
+  },"94": {
+    "doc": "Tools",
+    "title": "Tools",
+    "content": " ",
+    "url": "http://localhost:4000/docs/tools",
+    "relUrl": "/docs/tools"
+  }
+}
