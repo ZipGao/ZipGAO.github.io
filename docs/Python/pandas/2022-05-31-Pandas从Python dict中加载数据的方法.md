@@ -26,7 +26,7 @@ grand_parent: Python
 	```
 	Output:
 
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527154709.png)
+	![](../../../assets/images/Pasted%20image%2020220527154709.png)
 	
 2. 使用用户定义的索引从 Dictionary 创建 DataFrame。
 	``` python
@@ -47,7 +47,7 @@ grand_parent: Python
 	df	
 	```
 	Output:
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527154850.png)
+	![](../../../assets/images/Pasted%20image%2020220527154850.png)
 
 3. 从简单字典创建 DataFrame，即具有键和简单值（如整数或字符串值）的字典。
 	``` python
@@ -69,7 +69,7 @@ grand_parent: Python
 	
 	```
 	Output:
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527155122.png)
+	![](../../../assets/images/Pasted image 20220527155122.png)
 
 4. 从 Dictionary 创建 DataFrame 仅包含所需的列。
 	``` python
@@ -91,7 +91,7 @@ grand_parent: Python
 	
 	```
 	Output:
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527155210.png)
+	![](../../../assets/images/Pasted image 20220527155210.png)
 
 5. 从具有不同方向的字典创建数据帧，即字典键充当数据帧中的索引。
 	``` python 
@@ -114,7 +114,7 @@ grand_parent: Python
 	
 	```
 	Output:
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527155257.png)
+	![](../../../assets/images/Pasted image 20220527155257.png)
 6. 从嵌套字典创建 DataFrame。
 	``` python
 	# import pandas library
@@ -154,7 +154,7 @@ grand_parent: Python
 	
 	```
 	Output:
-	![](https://img-1312320788.cos.ap-nanjing.myqcloud.com/Pasted image 20220527155349.png)
+	![](../../../assets/images/Pasted image 20220527155349.png)
 
 ------------
 参考文献：[How to create DataFrame from dictionary in Python-Pandas?](https://www.geeksforgeeks.org/how-to-create-dataframe-from-dictionary-in-python-pandas/)
