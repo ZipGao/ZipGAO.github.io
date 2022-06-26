@@ -26,7 +26,7 @@ grand_parent: Python
 	```
 	Output:
 
-	![](../../../assets/images/Pasted%20image%2020220527154709.png)
+	![](../../../assets/images/Pasted image 20220527154709.png)
 	
 2. 使用用户定义的索引从 Dictionary 创建 DataFrame。
 	``` python
@@ -47,7 +47,7 @@ grand_parent: Python
 	df	
 	```
 	Output:
-	![](../../../assets/images/Pasted%20image%2020220527154850.png)
+	![](../../../assets/images/Pasted image 20220527154850.png)
 
 3. 从简单字典创建 DataFrame，即具有键和简单值（如整数或字符串值）的字典。
 	``` python

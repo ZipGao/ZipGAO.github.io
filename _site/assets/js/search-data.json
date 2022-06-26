@@ -530,8 +530,8 @@
     "doc": "Python",
     "title": "Python",
     "content": " ",
-    "url": "http://localhost:4000/docs/Python/python/",
-    "relUrl": "/docs/Python/python/"
+    "url": "http://localhost:4000/docs/python",
+    "relUrl": "/docs/python"
   },"89": {
     "doc": "Python 多进程",
     "title": "Python多进程",
