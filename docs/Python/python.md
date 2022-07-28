@@ -5,4 +5,4 @@ has_children: true
 permalink: /docs/python
 ---
 
-## Python
+# Python
